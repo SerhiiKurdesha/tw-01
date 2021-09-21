@@ -1,12 +1,39 @@
 .hero__title{
     color: #2b2c31;
 }
+.hero__list{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        margin: -10px;
+    }
+}
 .hero__item{
     text-align: center;
     padding: 20px 0;
     color: #ffffff;
-    margin: 5px 0;
     font-size: 32px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 4 * 5px) / 2);
+        margin: 5px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        flex-basis: calc((100% - 6 * 10px) / 3);
+        margin: 10px;
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 10px;
+        }    
+    }
 }
 
 $colors: "#f44336", "#3f51b5", "#4caf50", "#e91e63", "#009688", "#f0e15c", "#8d1a11", "#247494";

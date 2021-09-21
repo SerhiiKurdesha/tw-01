@@ -14,13 +14,13 @@
     <header class="page-header">
         <div class="container">
             <nav class="nav">
-                <button type="button" class="btn">
-                    <svg width="45" height="45">
+                <button type="button" class="menu-button is-open" data-menu-button>
+                    <svg width="45" height="45" aria-label="Переключатель мобильного меню">
                         <use class="icon-cross" href="./svg/sprite.svg#icon-cross"></use>
                         <use class="icon-menu" href="./svg/sprite.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="nav__div">
+                <!-- <div class="nav__div">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#" class="nav__link">Один</a>
@@ -35,7 +35,7 @@
                             <a href="#" class="nav__link">Четыре</a>
                         </li>
                     </ul>
-                </div>  
+                </div>   -->
             </nav>    
         </div>
     </header>
@@ -57,7 +57,23 @@
                 </ul>
             </div>    
         </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">Заголовок второй секции</h2>
+
+                <ul class="reviews__list">
+                    <li class="reviews__item">1</li>
+                    <li class="reviews__item">2</li>
+                    <li class="reviews__item">3</li>
+                    <li class="reviews__item">4</li>
+                    <li class="reviews__item">5</li>
+                </ul>
+            </div>    
+        </section>
     </main>
+
+    <script src="./js/menu.js"></script>
     
 </body>
 </html>

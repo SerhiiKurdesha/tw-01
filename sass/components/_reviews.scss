@@ -1,0 +1,35 @@
+.reviews{
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.reviews__list{
+    display: flex;
+}
+.reviews__title{
+    color: #f3742b;
+}
+.reviews__item{
+    text-align: center;
+    padding: 40px 0;
+    color: #ffffff;
+    font-size: 48px;
+
+    flex-basis: 20%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 10 * 7) / 5);
+        margin: 7px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        flex-basis: calc((100% - 10 * 10) / 5);
+        margin: 10px;
+        font-size: 56px;
+    }
+}
+
+$colors: "#74b667","#c46313","#9f36a8","#b12d55","#2bf0f3";
+
+@include colorize($colors, ".reviews__item");
