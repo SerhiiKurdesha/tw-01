@@ -1,0 +1,10 @@
+@mixin colorize($colors, $mainSelector) {
+    @each $color in $colors {
+        $idx: index($colors, $color);
+
+        #{$mainSelector}:nth-child(#{$idx}) {
+            background-color: #{$color};
+        }
+        
+    }
+}
