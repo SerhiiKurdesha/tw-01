@@ -1,3 +1,7 @@
+.page-header .nav{
+    position: relative;
+    display: flex;
+}
 .nav{
     display: flex;
     justify-content: flex-end;
@@ -15,4 +19,24 @@
 }
 .menu-button.is-open .icon-menu{
     display: none;
+}
+.nav__div{
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(238, 232, 170, .8);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    box-sizing: border-box;
+
+    &.is-open{
+        display: block;
+    }
+}
+.nav__link{
+    color: #5279e4;
 }

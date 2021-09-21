@@ -14,28 +14,29 @@
     <header class="page-header">
         <div class="container">
             <nav class="nav">
-                <button type="button" class="menu-button is-open" data-menu-button>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="nav__div" data-menu-button>
                     <svg width="45" height="45" aria-label="Переключатель мобильного меню">
                         <use class="icon-cross" href="./svg/sprite.svg#icon-cross"></use>
                         <use class="icon-menu" href="./svg/sprite.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <!-- <div class="nav__div">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Один</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Два</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Три</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Четыре</a>
-                        </li>
-                    </ul>
-                </div>   -->
+
+                    <div class="nav__div" id="nav__div" data-menu>
+                        <ul class="nav__list">
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Один</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Два</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Три</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Четыре</a>
+                           </li>
+                        </ul>
+                    </div> 
             </nav>    
         </div>
     </header>

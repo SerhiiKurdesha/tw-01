@@ -27,6 +27,13 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+.page-header .nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +59,28 @@ h1, h2, h3, h4, h5 {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.nav__div {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(238, 232, 170, 0.8);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav__div.is-open {
+  display: block;
+}
+
+.nav__link {
+  color: #5279e4;
 }
 
 .container {
