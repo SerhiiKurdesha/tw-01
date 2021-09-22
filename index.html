@@ -42,6 +42,11 @@
     </header>
 
     <main>
+
+        <div class="container">
+            <button type="button" data-modal-open>Open</button>
+        </div>
+
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Заголовок первой секции</h1>
@@ -74,7 +79,17 @@
         </section>
     </main>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close>Close</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat reprehenderit id animi quas consequatur? Nulla repellendus aliquam odio itaque qui sunt numquam est aliquid? Esse recusandae vel reprehenderit cupiditate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iste corrupti similique veritatis ex, eaque praesentium assumenda laborum reprehenderit doloremque molestiae, rerum blanditiis repudiandae quisquam molestias quibusdam voluptate! Blanditiis, tempore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis necessitatibus cupiditate, voluptas quisquam unde quia est pariatur nam mollitia autem architecto? Modi ab perspiciatis porro distinctio cupiditate fuga unde odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dicta explicabo distinctio expedita iure mollitia praesentium. Rerum qui cum iusto illo at eveniet, mollitia quo animi facilis eos deserunt ratione.</p>
+    </div>
+
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
     
 </body>
 </html>
