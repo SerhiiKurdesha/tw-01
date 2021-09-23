@@ -13,6 +13,11 @@ a{
 }
 body{
     font-family: 'Stick No Bills', sans-serif;
+    font-size: 14px;
+
+    &.modal-open{
+        overflow: hidden;
+    }
 }
 button{
     margin: 0;
