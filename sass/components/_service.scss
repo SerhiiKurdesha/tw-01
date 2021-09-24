@@ -1,0 +1,42 @@
+.service__title{
+    color: #2ab0b4;
+}
+.service__list{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+.service__item{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+    color: #ffffff;
+
+    flex-basis: 25%;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 8 * 12) / 4);
+        margin: 12px;
+        font-size: 45px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        flex-basis: calc((100% - 8 * 18) / 4);
+        margin: 18px;
+        font-size: 55px;
+        color: #000000;
+    }
+}
+
+$colors: "red", "blue", "green", "pink";
+
+@include colorize($colors, ".service__item");
