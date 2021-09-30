@@ -431,4 +431,50 @@ h1, h2, h3, h4, h5 {
 .service__item:nth-child(4) {
   background-color: pink;
 }
+
+.team__title {
+  color: #ff8800;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .team__item {
+    -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%;
+  }
+  .team__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.team__item:nth-child(1) {
+  background-color: #708f91;
+}
+
+.team__item:nth-child(2) {
+  background-color: rgba(192, 150, 219, .7);
+}
+
+.team__item:nth-child(3) {
+  background-color: #cfac6a;
+}
 /*# sourceMappingURL=main.css.map */
