@@ -1,7 +1,131 @@
 .footer{
+    padding: 50px 0 20px 0;
     background-color: #756666;
 }
+.footer__flex{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d1c3c3;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer__div{
+
+    @media screen and (max-width: 767px) {
+        &:not(:first-child){
+        margin-top: 25px;
+        }
+    }
+}
+.footer__title{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20 / 16 * 100%;
+    color: $white-color;
+
+    &:not(:first-child){
+        margin-top: 18px;
+    }
+}
 .footer__list{
+    margin-top: 15px;
     text-align: center;
     font-size: 24px;
+}
+.footer__item{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: start;
+    }
+}
+.footer__link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24 / 14 * 100%;
+    letter-spacing: 0.03em;
+    color: $light-gray-color;
+    transition: color 300ms ease-in-out;
+
+    &:hover, &:focus{
+        text-decoration: underline;
+        color: $white-color;
+    }
+}
+.footer__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24 / 14 *100%;
+    letter-spacing: 0.03em;
+    color: $light-gray-color;
+    fill: $light-gray-color;
+    transition: color 300ms ease-in-out, fill 300ms ease-in-out;
+
+    &:focus, &:hover{
+        color: $white-color;
+        fill: $white-color;
+    }
+}
+.footer__item-contact{
+
+    &:not(:first-child){
+        margin-top: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: start;
+    }
+}
+.footer__social-list{
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-top: 15px;
+    }
+}
+.footer__social-svg{
+    transition: filter 400ms ease-in-out;
+
+    @media screen and (min-width: 1140px) {
+        filter: grayscale(1);
+
+        &:hover, &:focus{
+            filter: grayscale(0);
+        }
+    }
+}
+.footer__svg{
+    margin-right: 15px;
+}
+// ==============
+.footer__line{
+    padding-top: 20px;
+}
+.footer__line-list{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer__line-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22 / 18 *100%;
+    color: rgba(200, 200, 200, .5);
+
+    text-align: center;
 }
